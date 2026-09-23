@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Approval Workflow | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header"><div><div class="eyebrow">CONTENT GOVERNANCE</div><h1>Approval Workflow</h1><p>Human-in-the-loop review prevents unapproved AI-assisted content from being published.</p></div></header>
+<section class="workflow-steps"><div class="active"><span>01</span><b>Draft</b><small>Create</small></div><i>→</i><div><span>02</span><b>Pending Review</b><small>Submit</small></div><i>→</i><div><span>03</span><b>Approved</b><small>Review</small></div><i>→</i><div><span>04</span><b>Published</b><small>API delivery</small></div></section>
+<section class="card section-card"><div class="section-head"><div><small>EDITORIAL QUEUE</small><h2>Pending Review</h2></div><button class="secondary" onclick="loadPending()">↻ Refresh</button></div><div class="table-wrap"><table><thead><tr><th>Content</th><th>Author</th><th>Category</th><th>Submitted</th><th>Actions</th></tr></thead><tbody id="pendingRows"></tbody></table></div></section>
+<section class="governance-grid"><div class="feature-card"><span>👥</span><b>Role Based Access</b><small>Admin, Editor and Author permissions.</small></div><div class="feature-card"><span>🧾</span><b>Version History</b><small>Every meaningful edit creates a version snapshot.</small></div><div class="feature-card"><span>🔐</span><b>Audit Trail</b><small>Important content actions are recorded.</small></div><div class="feature-card"><span>🤝</span><b>Human-in-the-loop</b><small>AI assists; authorized humans control publication.</small></div></section>
+{% endblock %}

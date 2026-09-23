@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block title %}Audit Trail | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header"><div><div class="eyebrow">SECURITY & GOVERNANCE</div><h1>Audit Trail</h1><p>Administrative history of important content, workflow and media actions.</p></div><button class="secondary" onclick="loadAudit()">↻ Refresh</button></header>
+<section class="card section-card"><div class="table-wrap"><table><thead><tr><th>Time</th><th>User</th><th>Action</th><th>Entity</th><th>Details</th></tr></thead><tbody id="auditRows"></tbody></table></div></section>
+{% endblock %}

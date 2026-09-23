@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Login | AI-Powered Headless CMS{% endblock %}
+{% block auth %}
+<div class="login-page">
+  <div class="login-art">
+    <div class="login-glow glow-a"></div><div class="login-glow glow-b"></div>
+    <div class="login-network"><span>AI</span><span>NLP</span><span>ML</span><span>API</span><span>SQL</span></div>
+    <div class="login-copy"><small>FINAL YEAR PROJECT · B.TECH CSE</small><h1>AI-Powered<br><em>Headless CMS</em></h1><p>Intelligent content management, machine learning and API-first delivery in one governed workspace.</p></div>
+  </div>
+  <div class="login-panel">
+    <div class="login-brand"><div class="brand-mark">✦</div><span>AI CMS</span></div>
+    <h2>Welcome back</h2><p class="muted">Sign in to your content intelligence workspace.</p>
+    {% if error %}<div class="error">{{ error }}</div>{% endif %}
+    <form method="post" class="login-form">
+      <label>Email<input name="email" type="email" value="admin@neurocms.local" required></label>
+      <label>Password<input name="password" type="password" value="admin123" required></label>
+      <button class="button wide" type="submit">Sign in to CMS →</button>
+    </form>
+    <div class="demo-box"><b>Demo accounts</b><span>Admin: admin@neurocms.local / admin123</span><span>Editor: editor@neurocms.local / editor123</span><span>Author: author@neurocms.local / author123</span></div>
+  </div>
+</div>
+{% endblock %}

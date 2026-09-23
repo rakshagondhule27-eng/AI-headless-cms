@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Analytics | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header"><div><div class="eyebrow">CONTENT INTELLIGENCE</div><h1>Analytics</h1><p>Database-backed performance, distribution and content-quality insights.</p></div><div class="header-actions"><button class="secondary" onclick="loadAnalytics()">↻ Refresh data</button>{% if user.role == "Admin" %}<a class="secondary" href="/api/analytics/export">↓ Export CSV</a>{% endif %}</div></header>
+<section class="stats five"><div><span>Total Content</span><b id="atotal">—</b><small>Repository</small></div><div><span>Published</span><b id="apub">—</b><small>Live content</small></div><div><span>Total Views</span><b id="aviews">—</b><small>Engagement</small></div><div><span>AI Assisted</span><b id="aai">—</b><small>Analyzed items</small></div><div><span>Avg Quality</span><b id="aquality">—</b><small>Out of 100</small></div></section>
+<div class="analytics-grid">
+<section class="card chart-card"><div class="section-head"><div><small>PERFORMANCE</small><h2>Top Content</h2></div></div><div id="topContent" class="rank-list"></div></section>
+<section class="card chart-card"><div class="section-head"><div><small>STATUS</small><h2>Content Lifecycle</h2></div></div><div id="statusList" class="bar-list"></div><div id="statusDonut" class="donut-wrap"></div></section>
+<section class="card chart-card"><div class="section-head"><div><small>TAXONOMY</small><h2>Category Distribution</h2></div></div><div id="categoryList" class="bar-list"></div></section>
+<section class="card chart-card"><div class="section-head"><div><small>QUALITY</small><h2>AI Quality Distribution</h2></div></div><div id="qualityList" class="bar-list"></div><p class="note">Quality is a lightweight heuristic score used to prioritize editorial review; it is not a human evaluation benchmark.</p></section>
+</div>
+<section class="card insight-card"><div><small>EDITORIAL INSIGHT</small><h2>Publication health</h2><p>Use the lifecycle and quality charts together: content should move through review before publication, while the AI quality score is used only as an editorial triage signal.</p></div><div class="health-gauge"><div id="publicationGauge" class="gauge"><span id="publicationRate">—</span><small>published</small></div></div></section>
+{% endblock %}

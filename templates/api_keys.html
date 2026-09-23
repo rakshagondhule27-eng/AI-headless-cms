@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}API Keys | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header"><div><div class="eyebrow">ADMIN · EXTERNAL INTEGRATIONS</div><h1>API Keys</h1><p>Create scoped-looking client credentials for the versioned headless API. Keys are stored as hashes and shown only once.</p></div><button class="button" onclick="createClientKey()">＋ Generate Key</button></header>
+<section class="card panel"><div class="section-head"><div><small>SECURE CLIENT ACCESS</small><h2>External integrations</h2></div><span class="mini-badge">X-API-KEY</span></div><div id="newApiKey" class="api-key-reveal hidden"></div><div id="apiKeysList" class="api-key-list">Loading…</div></section>
+<section class="card panel"><small>USAGE</small><h2>Example request</h2><pre class="code-block">curl -H "X-API-Key: YOUR_KEY" "http://127.0.0.1:5000/api/v1/articles"</pre></section>
+{% endblock %}

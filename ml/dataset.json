@@ -1,0 +1,202 @@
+[
+  {
+    "text": "artificial intelligence machine learning deep learning neural networks predictive analytics data science",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "natural language processing text classification language models chatbot generative ai",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "computer vision image recognition object detection neural networks ai",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "machine learning model training features prediction classification regression",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "reinforcement learning agents rewards policies artificial intelligence",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "neural network training backpropagation activation functions deep learning",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "ai recommendation systems intelligent prediction automated decision support",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "speech recognition language understanding natural language artificial intelligence",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "deep learning convolutional neural networks image classification ai",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "large language models embeddings transformers generative artificial intelligence",
+    "label": "Artificial Intelligence"
+  },
+  {
+    "text": "python programming functions classes modules packages software development",
+    "label": "Development"
+  },
+  {
+    "text": "javascript html css frontend website programming application development",
+    "label": "Development"
+  },
+  {
+    "text": "flask python backend rest api web development",
+    "label": "Development"
+  },
+  {
+    "text": "git github version control coding software engineering repository",
+    "label": "Development"
+  },
+  {
+    "text": "object oriented programming classes inheritance abstraction software development",
+    "label": "Development"
+  },
+  {
+    "text": "unit testing debugging code quality software engineering development",
+    "label": "Development"
+  },
+  {
+    "text": "backend routing request response web application python flask",
+    "label": "Development"
+  },
+  {
+    "text": "frontend forms javascript dom events browser development",
+    "label": "Development"
+  },
+  {
+    "text": "continuous integration deployment source code software development workflow",
+    "label": "Development"
+  },
+  {
+    "text": "api endpoint authentication request validation application programming",
+    "label": "Development"
+  },
+  {
+    "text": "sql database tables queries joins relational database data storage",
+    "label": "Technology"
+  },
+  {
+    "text": "cloud computing web services api cybersecurity technology infrastructure",
+    "label": "Technology"
+  },
+  {
+    "text": "internet web server database api technology platform",
+    "label": "Technology"
+  },
+  {
+    "text": "network security encryption authentication software technology",
+    "label": "Technology"
+  },
+  {
+    "text": "postgresql relational database indexing transactions technology",
+    "label": "Technology"
+  },
+  {
+    "text": "cloud infrastructure virtual machines storage networking technology",
+    "label": "Technology"
+  },
+  {
+    "text": "cybersecurity access control encryption threat protection systems",
+    "label": "Technology"
+  },
+  {
+    "text": "rest api http methods json web services technology",
+    "label": "Technology"
+  },
+  {
+    "text": "data storage backup servers infrastructure technology",
+    "label": "Technology"
+  },
+  {
+    "text": "web hosting domains servers deployment platform technology",
+    "label": "Technology"
+  },
+  {
+    "text": "students learning education classroom university study exam curriculum teaching",
+    "label": "Education"
+  },
+  {
+    "text": "online learning course teacher student assessment education",
+    "label": "Education"
+  },
+  {
+    "text": "college academic learning study skills classroom teaching",
+    "label": "Education"
+  },
+  {
+    "text": "education scholarship students university knowledge learning",
+    "label": "Education"
+  },
+  {
+    "text": "digital classroom educational resources student learning outcomes",
+    "label": "Education"
+  },
+  {
+    "text": "learning management system courses assignments student education",
+    "label": "Education"
+  },
+  {
+    "text": "university curriculum examination academic teaching faculty students",
+    "label": "Education"
+  },
+  {
+    "text": "personalized learning student assessment educational technology",
+    "label": "Education"
+  },
+  {
+    "text": "study methods revision academic performance students education",
+    "label": "Education"
+  },
+  {
+    "text": "education training course instructor learners assessment",
+    "label": "Education"
+  },
+  {
+    "text": "business marketing finance startup management entrepreneurship sales company",
+    "label": "Business"
+  },
+  {
+    "text": "sales customer marketing strategy business growth revenue",
+    "label": "Business"
+  },
+  {
+    "text": "startup investment finance management organization business",
+    "label": "Business"
+  },
+  {
+    "text": "ecommerce product marketing customer business analytics",
+    "label": "Business"
+  },
+  {
+    "text": "financial planning budgeting company revenue business management",
+    "label": "Business"
+  },
+  {
+    "text": "digital marketing advertising customers brand business strategy",
+    "label": "Business"
+  },
+  {
+    "text": "entrepreneurship startup founders investment market business",
+    "label": "Business"
+  },
+  {
+    "text": "customer relationship sales service business growth",
+    "label": "Business"
+  },
+  {
+    "text": "market research product strategy competitive business analysis",
+    "label": "Business"
+  },
+  {
+    "text": "company operations management finance performance business",
+    "label": "Business"
+  }
+]

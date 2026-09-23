@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}AI Intelligence | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header"><div><div class="eyebrow">V12 · ADVANCED AI PLATFORM</div><h1>AI Content Intelligence</h1><p>Search the knowledge base, detect duplicate content, ask grounded questions and surface editorial actions.</p></div><span class="status-pill ready">● Local & Explainable</span></header>
+<section class="intelligence-grid">
+  <section class="card intelligence-hero"><div><span class="hero-kicker">RETRIEVAL · QUALITY · GOVERNANCE</span><h2>Make the CMS understand its own content.</h2><p>The intelligence layer uses local vector-based retrieval, keyword signals and your published knowledge base. No external AI API is required.</p></div><div class="intelligence-orbit"><div>SEARCH</div><div>AI</div><div>AUDIT</div><div>DATA</div></div></section>
+  <section class="stats four"><div><span>Total</span><b id="ixTotal">—</b><small>content items</small></div><div><span>Published</span><b id="ixPublished">—</b><small>knowledge base</small></div><div><span>Quality flags</span><b id="ixQuality">—</b><small>editorial triage</small></div><div><span>Metadata gaps</span><b id="ixMetadata">—</b><small>summary / tags</small></div></section>
+</section>
+<div class="grid-2">
+<section class="card panel"><div class="section-head"><div><small>KNOWLEDGE SEARCH</small><h2>Hybrid content search</h2></div><span class="mini-badge">VECTOR + KEYWORDS</span></div><div class="searchbox"><span>⌕</span><input id="ixSearch" placeholder="Search published CMS content…"><button class="button" onclick="intelligenceSearch()">Search</button></div><div id="ixSearchResults" class="intelligence-results"><p class="muted">Search results will appear here.</p></div></section>
+<section class="card panel"><div class="section-head"><div><small>GROUNDED ASSISTANT</small><h2>Ask the CMS</h2></div><span class="mini-badge">RETRIEVAL</span></div><textarea id="ixChat" rows="5" placeholder="e.g. What content do we have about artificial intelligence?"></textarea><button class="button wide" onclick="askCMS()">Ask Knowledge Base →</button><div id="ixChatResult" class="chat-result"><p class="muted">Answers are grounded in published CMS content and include sources.</p></div></section>
+</div>
+<div class="grid-2">
+<section class="card panel"><div class="section-head"><div><small>EDITORIAL HEALTH</small><h2>AI insights</h2></div><button class="secondary" onclick="loadIntelligence()">↻ Refresh</button></div><div id="ixActions" class="insight-actions"></div></section>
+<section class="card panel"><div class="section-head"><div><small>CONTENT GOVERNANCE</small><h2>Duplicate detector</h2></div></div><select id="ixDuplicateContent"></select><button class="button wide" onclick="checkDuplicates()">Check Similar Content</button><div id="ixDuplicates" class="duplicate-list"><p class="muted">Select content to compare against the repository.</p></div></section>
+</div>
+<section class="card panel"><div class="section-head"><div><small>EXTERNAL DELIVERY</small><h2>Versioned API</h2></div><span class="mini-badge">API v1</span></div><div class="api-advanced"><div><b>API-key protected clients</b><small>Generate an external client key from the admin API and send it as <code>X-API-Key</code>.</small></div><div><code>GET /api/v1/articles</code><small>Published structured content feed</small></div><div><code>GET /api/v1/search?q=...</code><small>Versioned external search</small></div></div></section>
+{% endblock %}

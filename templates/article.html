@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block title %}{{item.title}} | AI CMS{% endblock %}
+{% block content %}
+<div class="article-shell"><a class="back-link" href="/content">← Back to Content Studio</a><article class="article card"><div class="article-kicker">{{item.category.name if item.category else 'General'}} · {{item.status}}</div><img class="article-cover" src="{{item.image_url or '/static/visuals/ai.svg'}}" onerror="this.src='/static/visuals/ai.svg'" alt="{{item.title}} cover"><h1>{{item.title}}</h1><div class="article-meta"><span>By {{item.author.name if item.author else 'Unknown'}}</span><span>{{item.views}} views</span><span>AI quality {{item.ai_score}}/100</span></div>{% if item.summary %}<div class="article-summary"><b>Summary</b><p>{{item.summary}}</p></div>{% endif %}<div class="article-body">{{item.body}}</div>{% if item.tags %}<div class="tag-row">{% for tag in item.tags %}<span class="ai-tag">#{{tag.name}}</span>{% endfor %}</div>{% endif %}</article></div>
+{% endblock %}

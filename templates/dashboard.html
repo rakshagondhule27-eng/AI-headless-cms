@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header">
+  <div><div class="eyebrow">AI CONTENT INTELLIGENCE · FINAL BUILD</div><h1>Welcome back, {{user.name}} 👋</h1><p>One workspace for structured content, AI assistance, governed publishing and API delivery.</p></div>
+  <a class="button" href="/content">＋ Create Content</a>
+</header>
+<section class="hero-card">
+  <div class="hero-copy">
+    <span class="hero-kicker">HEADLESS · AI · API-FIRST</span>
+    <h2>Turn ideas into <em>publish-ready</em> content.</h2>
+    <p>Generate and analyze content with local AI/NLP tools, classify it with ML, route it through human approval, and expose published content through REST APIs.</p>
+    <div class="hero-actions"><a class="button" href="/ai">✦ Open AI Studio</a><a class="ghost-button dark" href="/architecture">Explore Architecture →</a></div>
+  </div>
+  <div class="hero-art"><div class="hero-core">✦<small>AI CMS</small></div><div class="float-card f1"><b>TF-IDF</b><small>Text intelligence</small></div><div class="float-card f2"><b>REST API</b><small>Multi-client delivery</small></div><div class="float-card f3"><b>HUMAN LOOP</b><small>Governed publishing</small></div></div>
+</section>
+<section class="system-strip card">
+  <div><span class="live-dot"></span><b>System health</b><small id="systemHealth">Checking components…</small></div>
+  <div><b id="healthVersion">V11</b><small>submission build</small></div>
+  <div><b id="healthDb">—</b><small>database</small></div>
+  <div><b id="healthMl">—</b><small>ML model</small></div>
+</section>
+<section class="stats five">
+  <div><span>Total Content</span><b id="total">—</b><small>Library</small></div>
+  <div><span>Published</span><b id="published">—</b><small>API ready</small></div>
+  <div><span>Drafts</span><b id="drafts">—</b><small>In progress</small></div>
+  <div><span>AI Assisted</span><b id="ai">—</b><small>Analyzed</small></div>
+  <div><span>Total Views</span><b id="views">—</b><small>Engagement</small></div>
+</section>
+<section class="dashboard-grid">
+  <div class="card section-card">
+    <div class="section-head"><div><small>CONTENT STREAM</small><h2>Recent Content</h2></div><a href="/content">View library →</a></div>
+    <div id="recentCards" class="content-mini-grid"></div>
+  </div>
+  <div class="card section-card">
+    <div class="section-head"><div><small>QUICK ACCESS</small><h2>Project Modules</h2></div></div>
+    <a href="/ai" class="quick-row"><span>✦</span><div><b>AI Content Studio</b><small>Generate, summarize and analyze</small></div><strong>→</strong></a>
+    <a href="/ml-lab" class="quick-row"><span>◈</span><div><b>ML Research Lab</b><small>Classification and evaluation</small></div><strong>→</strong></a>
+    <a href="/workflow" class="quick-row"><span>✓</span><div><b>Approval Workflow</b><small>Human-in-the-loop publishing</small></div><strong>→</strong></a>
+    <a href="/analytics" class="quick-row"><span>◒</span><div><b>Analytics</b><small>Content and engagement insights</small></div><strong>→</strong></a>
+  </div>
+</section>
+<section class="card architecture-strip">
+  <div><div><small class="eyebrow">SYSTEM DESIGN</small><h2>Headless architecture</h2><p>Content is managed centrally and separated from presentation. Published structured data can be consumed by websites, mobile applications and future clients through REST APIs.</p></div>
+  <div class="architecture-visual"><div>🖥️<b>Frontend</b><small>HTML · CSS · JS</small></div><i>→</i><div>⚡<b>Flask</b><small>REST · Auth</small></div><i>→</i><div>🗄️<b>SQL</b><small>Content store</small></div><i>→</i><div>🧠<b>AI / ML</b><small>NLP · TF-IDF</small></div></div></div>
+</section>
+{% endblock %}

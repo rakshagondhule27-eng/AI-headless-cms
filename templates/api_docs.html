@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}API Documentation | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header"><div><div class="eyebrow">HEADLESS DELIVERY</div><h1>API Documentation</h1><p>REST endpoints that separate content delivery from the presentation layer.</p></div><div class="header-actions"><a class="secondary" href="/api/openapi.json" target="_blank">OpenAPI JSON ↗</a><a class="button" href="/api/public/articles" target="_blank">Open public feed ↗</a></div></header>
+<section class="api-hero card"><div><span class="method-pill">REST API</span><h2>One content source. Multiple clients.</h2><p>Authenticated management endpoints power the dashboard. Public published content is exposed through a separate read-only feed.</p></div><div class="api-code"><span>GET</span><code>/api/public/articles</code><small>Returns published content as JSON</small></div></section>
+<section class="endpoint-list">{% for method,path,description in endpoints %}<article class="endpoint card"><span class="method {{method|lower}}">{{method}}</span><div><code>{{path}}</code><p>{{description}}</p></div><button class="secondary" onclick="copyText('{{path}}')">Copy path</button></article>{% endfor %}</section>
+{% endblock %}

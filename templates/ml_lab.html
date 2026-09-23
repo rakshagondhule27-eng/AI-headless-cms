@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}ML Research Lab | AI CMS{% endblock %}
+{% block content %}
+<header class="page-header"><div><div class="eyebrow">RESEARCH & EVALUATION</div><h1>ML Research Lab</h1><p>Demonstrate text classification, confidence and reproducible evaluation metrics.</p></div><span class="status-pill ready">● Model Available</span></header>
+<section class="research-banner"><div><b>Training pipeline</b><span>Dataset → Train/Test → TF-IDF → Logistic Regression → Evaluation → Saved Model</span></div><a href="/research">Research notes →</a></section>
+<div class="grid-2">
+<section class="card panel"><div class="section-head"><div><small>LIVE PREDICTION</small><h2>Classification Demo</h2></div></div><textarea id="mlText" rows="8" placeholder="Example: Neural networks and deep learning are used to build intelligent applications…"></textarea><button class="button wide" onclick="predictML()">Predict Category</button><div id="mlPrediction" class="analysis"></div></section>
+<section class="card panel"><div class="section-head"><div><small>MODEL EVALUATION</small><h2>Performance Metrics</h2></div></div><div id="mlMetrics">Loading…</div><div id="confusionMatrix" class="matrix-wrap"></div><p class="note">The bundled 50-sample dataset is a demonstration dataset. Its score is not a real-world benchmark; use a larger, properly sourced domain dataset for publication-grade evaluation.</p></section>
+</div>
+<section class="card panel"><div class="section-head"><div><small>MODEL COMPARISON</small><h2>Experiment overview</h2></div></div><div id="modelComparison" class="comparison-list"></div></section>
+{% endblock %}
